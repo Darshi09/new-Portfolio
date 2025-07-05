@@ -19,22 +19,26 @@ const ContactForm = () => {
   const sendEmail = (e) => {
     e.preventDefault();
     emailjs
-      .sendForm("service_ko3hmpt", "template_ahbmmqd", form.current, {
-        publicKey: "I6HAT5mUZH7WHabGE",
+      .sendForm("service_2c09rbf", "template_igh14xn", form.current, {
+        publicKey: "sSlOc9p4DYi9v25i6",
       })
       .then(
         () => {
           setEmail("");
           setName("");
           setMessage("");
-          setSuccess("Message Sent Succesfully");
+          setSuccess("Message Sent Successfully");
         },
         (error) => {
           console.log("FAILED...", error.text);
         }
-      );
-  };
-
+      )
+      .finally(() => {
+        setTimeout(() => {
+          setSuccess("");
+        }, 2000);        
+      });
+  }
   return (
     <div>
       <p className="text-cyan">{success}</p>
