@@ -6,8 +6,9 @@ import { fadeIn } from "../../framerMotion/variants";
 
 const SkillsMain = () => {
   return (
-    <div id="skills">
+    <div id="skills" className="bg-gradient-to-b from-pink-100 via-purple-100 to-white py-16">
       <div className="max-w-[1200px] px-4 mx-auto min-h-[600px] relative overflow-hidden">
+        {/* Animated Heading */}
         <motion.div
           variants={fadeIn("down", 0.2)}
           initial="hidden"
@@ -16,10 +17,14 @@ const SkillsMain = () => {
         >
           <SkillsText />
         </motion.div>
-        <div className="bottom-[50px] absolute left-[50%] -translate-x-[50%] sm:hidden lg:block">
+
+        {/* Skills for Large Devices */}
+        <div className="absolute bottom-[50px] left-1/2 -translate-x-1/2 hidden lg:block">
           <AllSkills />
         </div>
-        <div className="sm:block lg:hidden">
+
+        {/* Skills for Small Devices */}
+        <div className="block lg:hidden mt-8">
           <AllSkillsSM />
         </div>
       </div>
