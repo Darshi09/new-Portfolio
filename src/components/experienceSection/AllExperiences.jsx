@@ -51,7 +51,7 @@ const AllExperiences = () => {
                 whileInView="show"
                 viewport={{ once: false, amount: 0.7 }}
               >
-                <FaArrowRightLong className="text-6xl text-orange lg:block sm:hidden" />
+                <FaArrowRightLong className="text-6xl text-[#f8bbd0] lg:block sm:hidden" />
               </motion.div>
             ) : (
               ""

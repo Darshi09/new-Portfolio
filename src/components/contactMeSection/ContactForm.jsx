@@ -41,7 +41,7 @@ const ContactForm = () => {
   }
   return (
     <div>
-      <p className="text-cyan">{success}</p>
+      <p className="text-pink">{success}</p>
       <form ref={form} onSubmit={sendEmail} className="flex flex-col gap-4">
         <input
           type="text"
@@ -74,7 +74,7 @@ const ContactForm = () => {
         />
         <button
           type="submit"
-          className="w-full rounded-lg border border-cyan text-white h-12 font-bold text-xl hover:bg-darkCyan bg-cyan transition-all duration-500"
+          className="w-full rounded-lg border border-darkPurple text-white h-12 font-bold text-xl hover:bg-purple bg-darkPurple transition-all duration-500"
         >
           Send
         </button>

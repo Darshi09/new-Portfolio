@@ -12,7 +12,7 @@ const HeroImage = () => {
 
         {/* Spinning Purple Hexagon */}
         <div className="w-full h-full absolute bottom-[-20%] -z-10 flex justify-center items-center rotate-90">
-          <PiHexagonThin className="md:h-[90%] sm:h-[120%] min-h-[600px] w-auto text-[#8e24aa] opacity-60 animate-[spin_20s_linear_infinite]" />
+          <PiHexagonThin className="md:h-[90%] sm:h-[120%] min-h-[600px] w-auto text-[#f8bbd0] opacity-60 animate-[spin_20s_linear_infinite]" />
         </div>
 
         {/* Blurred Purple Hexagon */}

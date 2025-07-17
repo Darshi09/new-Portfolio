@@ -8,7 +8,7 @@ const SkillsText = () => {
         initial={{ opacity: 0, y: -30 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
-        className="text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-purple-500 to-fuchsia-500 mb-8 drop-shadow-lg"
+        className="text-6xl font-extrabold text-pink bg-clip-text bg-gradient-to-r from-pink-500 via-purple-500 to-fuchsia-500 mb-8 drop-shadow-lg"
       >
         My Skills
       </motion.h2>
